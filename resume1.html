@@ -1,0 +1,591 @@
+<!doctype html>
+<html>
+	<head>
+		
+		<title> My e-Resume </title>
+		<script>
+			alert("Hi there, welcome to my e-Resume page.")
+	</script>
+	<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+
+	
+	<style>
+	
+		nav{
+			width: 100%;
+			height: 100px;
+			top:0;
+			left:0;
+			padding: 10px 90px;
+			background: #1c2833;
+			font-family: tahoma;
+			position: fixed;
+			box-sizing: border-box;
+			z-index:1;
+		}
+		
+		
+		nav .logo{
+			padding: 22px 20px;
+			height: 100px;
+			float: left;
+			font-size: 24px;
+			font-weight: bold;
+			color: white;
+			text-transform: uppercase;
+			font-family: tahoma;
+		}
+		
+		nav ul{
+			float: right;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+		}
+		
+		nav ul li a{
+			line-height: 60px;
+			text-decoration: none;
+			color: white;
+			display: block;
+			padding: 12px 30px;
+			font-weight: bold;
+			text-transform: uppercase;
+			font-size: 15px;
+		}
+		
+		nav ul li a:hover{
+			background-color: white;
+			color: black;
+			border-radius: 6px;
+		}
+		
+		.section1{
+			width: 100%;
+			height: 100%;
+			margin-top: 100px;
+		}
+		
+		
+		.certificate{
+			border:solid;
+			border:2px solid;
+			text-align:left;
+			padding:10px;
+			box-shadow: 5px 10px 18px #888888;
+		}
+		
+		.job-title-container{
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 20px;
+		}
+		
+		.footer{
+				background-color:transparent;
+				color:black;
+				padding:5px;
+				clear:both;
+				text-align:center;
+		}
+		.center{
+				margin: 0 auto;
+				width: 400px;
+				text-align:center;
+		}
+		.skills{
+			list-style: none;
+	
+		}
+		
+		.skills li{
+			margin: 20px 0;
+		
+		}
+		
+		.bar{
+			background: #353b48;
+			display: block;
+			height: 2px;
+			border: 1px solid rgba(0,0,0,0.3);
+			border-radius: 3px; 
+			overflow: hidden;
+			box-shadow: 0 0 10px #2187e7b3;
+		
+		
+		}
+		.bar span{
+			height: 2px;
+			float: left;
+			background: #2187e7;
+	
+		}
+		.data{
+			width: 70%;
+			animation: data 2s;
+		
+		}
+		.php{
+			width: 30%;
+			animation: php 2s;
+		
+		}
+		.web{
+			width: 50%;
+			animation: web 2s;
+		
+		}
+		.it{
+			width: 70%;
+			animation: it 2s;
+		
+		}
+		.secu{
+			width: 45%;
+			animation: secu 2s;
+		
+		}
+		.project{
+			width: 60%;
+			animation: project 2s;
+		
+		}
+		
+		@keyframes data{
+			0%{
+				width: 0%;
+			
+			}
+			100%{	
+				width: 70%;
+			
+			
+			}
+		
+		
+		}
+		@keyframes php{
+			0%{
+				width: 0%;
+			
+			}
+			100%{	
+				width: 30%;
+			
+			
+			}
+		
+		
+		}
+		@keyframes web{
+			0%{
+				width: 0%;
+			
+			}
+			100%{	
+				width: 50%;
+			
+			
+			}
+		
+		
+		}
+		@keyframes it{
+			0%{
+				width: 0%;
+			
+			}
+			100%{	
+				width: 70%;
+			
+			
+			}
+		
+		
+		}
+		@keyframes secu{
+			0%{
+				width: 0%;
+			
+			}
+			100%{	
+				width: 45%;
+			
+			
+			}
+		
+		
+		}
+		@keyframes project{
+			0%{
+				width: 0%;
+			
+			}
+			100%{	
+				width: 60%;
+			
+			
+			}
+		
+		
+		}
+	
+		
+		.container {
+			width: 100px;
+			background-color: #ddd;
+			border-radius: 10px;
+						
+		}
+		
+		.softwares-microsoft {
+			text-align: right; 
+			padding-right: 5px;
+			line-height: 20px; 
+			color: white; 
+			box-sizing:border-box;
+			width: 90px; 
+			background-color: darkcyan;
+			border-radius: 10px;
+			
+						
+		}
+		.softwares-adobe {
+			text-align: right; 
+			padding-right: 5px;
+			line-height: 20px; 
+			color: white; 
+			box-sizing:border-box;
+			width: 50px;; 
+			background-color:  darkcyan;
+			border-radius: 10px;
+						
+		}
+		.softwares-dreamweaver {
+			text-align: right; 
+			padding-right: 5px;
+			line-height: 20px; 
+			color: white; 
+			box-sizing:border-box;
+			width: 70px; 
+			background-color:  darkcyan;
+			border-radius: 10px;
+						
+		}
+		.softwares-filmora {
+			text-align: right; 
+			padding-right: 5px;
+			line-height: 20px; 
+			color: white; 
+			box-sizing:border-box;
+			width: 80px; 
+			background-color:  darkcyan;
+			border-radius: 10px;
+						
+		}
+		.softwares-phpmyadmin {
+			text-align: right; 
+			padding-right: 5px;
+			line-height: 20px; 
+			color: white; 
+			box-sizing:border-box;
+			width: 45px; 
+			background-color: darkcyan;
+			border-radius: 10px;
+						
+		}
+		.softwares-xampp {
+			text-align: right; 
+			padding-right: 5px;
+			line-height: 20px; 
+			color: white; 
+			box-sizing:border-box;
+			width: 40px; 
+			background-color:  darkcyan;
+			border-radius: 10px;
+						
+		}
+		
+		
+		
+	</style>
+	</head>
+	
+	<body bgcolor="#D5D8DC"> 
+		<nav>
+			<div class="logo">Syahmi Hafiz</div>
+				<ul>
+					<li><a href="#home">My Profile</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#ex">Experience</a></li>
+					<li><a href="#skill">Skills</a></li>
+					<li><a href="index.html">My Artwork</a></li>
+				</ul>
+			
+		</nav>
+			
+		<div class="section1" align="center" id="home">		
+			<table width="1150px" height="800px" align="center" style="box-shadow: 5px 10px 18px #888888;">
+				<tr>
+					<td width="200px" bgcolor="#002740" style="color:white; padding:20px;  ">
+						<div class="pic" align="center"><img src="images/0.jfif" style="width:150px; border-radius:100px;" ></div>
+							<div class="home">
+								<h2 style="font-family:tahoma"><img src="images/user3.png" style="padding-right:20px;  filter: invert(1);" width="20px" height="20px">PERSONAL INFO</h2><hr>
+								<p>
+								Address :<br>
+								Kemaman, Terengganu, 24007<br><br>
+								Phone :<br>
+								+01156874667 <br><br>
+								E-mail :<br>
+								Syahmi17hafiz@gmail.com <br><br>
+								LinkedIn :<br>
+								<a href="https://www.linkedin.com/in/syahmi-hafiz-9032051b5/" style="color:aqua">linkedin.com/in/syahmi-hafiz9032051b5</a><br><br>
+													
+								</p>
+							</div>
+						<div class="skills" id="skill">
+							<h2 style="font-family:tahoma"><img src="images/jigsaw.png" style="padding-right:20px; filter: invert(1);" width="25px" height="25px">SKILLS</h2><hr>
+							<li>	
+								<h3>Database - PhpMyAdmin</h3><span class="bar"><span class="data"></span></span>
+							
+							</li>
+							<li>	
+								<h3>PHP, HTML, CSS, JavaScript</h3><span class="bar"><span class="php"></span></span>
+							
+							</li>
+							<li>	
+								<h3>Web Development Project</h3><span class="bar"><span class="web"></span></span>
+							
+							</li>
+							<li>	
+								<h3>IT Knowledge</h3><span class="bar"><span class="it"></span></span>
+							
+							</li>
+							<li>	
+								<h3>Basic IT Sucurity</h3><span class="bar"><span class="secu"></span></span>
+							
+							</li>
+							<li>	
+								<h3>Project Management</h3><span class="bar"><span class="project"></span></span>
+							
+							</li>
+						</div>
+						<br>
+						<div class="software">
+						<h2 style="font-family:tahoma"><img src="images/television.png" style="padding-right:20px; filter: invert(1); " width="20px" height="20px">SOFTWARE</h2><hr>
+							<table class="software">
+								<tr>
+									<td style="padding-bottom:15px; padding-right: 7px;">Microsoft Office</td>
+									<td style="padding-bottom:15px;">
+										<div class="container">
+										  <div class="softwares-microsoft">90%</div>
+										</div>
+									</td>
+						        </tr>
+								<tr>
+									<td style="padding-bottom:15px; padding-right: 7px;">Adobe Premiere Pro </td>
+									<td style="padding-bottom:15px;">
+										<div class="container">
+										  <div class="softwares-adobe">50%</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td style="padding-bottom:15px; padding-right: 7px;">Adobe Dreamweaver </td>
+									<td style="padding-bottom:15px;">
+										<div class="container">
+										  <div class="softwares-dreamweaver">70%</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td style="padding-bottom:15px; padding-right: 7px;">Filmora 9</td>
+									<td style="padding-bottom:15px;">
+										<div class="container">
+										  <div class="softwares-filmora">80%</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td style="padding-bottom:15px; padding-right: 7px;">PhpMyAdmin</td>
+									<td style="padding-bottom:15px;">
+										<div class="container">
+										  <div class="softwares-phpmyadmin">45%</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td style="padding-bottom:10px; padding-right: 7px;">Xampp </td>
+									<td style="padding-bottom:10px;">
+										<div class="container">
+										  <div class="softwares-xampp">40%</div>
+										</div>
+									</td>
+								</tr>			
+							</table>
+						</div>
+						<div class="languages">
+							<h2 style="font-family:tahoma"><img src="images/flag.png" style="padding-right:20px; filter: invert(1); " width="20px" height="20px">LANGUAGES</h2><hr>
+								<table class="languages">
+									<tr>
+										<td style="padding-right: 0px; padding-bottom: 20px; ">Malay :</td>
+										<td  style="padding-right: 10px; padding-bottom: 20px; text-align: center">Native</td>
+									</tr>
+								
+									<tr>
+										<td style="padding-right: 70px; padding-bottom: 20px;">English :</td>
+										<td  style="padding-right: 10px; padding-bottom: 20px; text-align: center">Proficient</td>
+									
+									</tr>		
+								</table>
+						</div>
+						<div class="ref">
+							<h2 style="font-family:tahoma"><img src="images/paper-pin.png" style="padding-right:20px; filter: invert(1); " width="20px" height="20px">REFERENCE</h2><hr>
+								<h4>Mrs. Ummu Fatihah bt Mohd Bahrin </h4>
+								<ul>	
+									<li>Lecturer & Internship Coordinator of CS110 UiTMCTKKT. </li>
+									<li>Tel. No : +019-4625258 </li>
+									<li>Email : ummufatihah@tganu.uitm. edu.my </li>
+								</ul>
+						</div>
+						
+						
+						
+					</td>
+					<td width="450px" bgcolor="#FDFEFE" style="padding-left:20px; padding-right:20px; box-shadow: 5px 10px 18px #888888;">
+						
+						<h1 style="font-family:tahoma">MOHAMAD SYAHMI HAFIZ BIN MOHAMAD SAUFI</h1>
+						<h2 id="about">IT Assistant / Web System Development</h2>	<hr>
+					
+						<p>Enthusiastic in IT field eager to contribute to team success through hard work, attention to detail and excellent 
+						organizational skills. Clear understanding of programming and training in project development. Motivated to learn, grow 
+						and excel in IT industry. </p><br>
+						
+						<h2 style="font-family:tahoma" id="ex"><img src="images/briefcase.png" style="padding-right:10px;" width="20px" height="20px">WORK EXPERIENCE</h2>
+						<div class="job-container" style="padding-left:40px;">
+							<div class="job">
+								<div class="job-title-container">
+									<div>
+										<div class="job-company"><h3>Freelance Calligraphist</h3></div>
+										<div class="job-title"><i style="font-size:15px;">Self - Employed, Kemaman, Terengganu</i></div>
+									</div>
+									<div style="padding-right:20px;">
+										<h3>Sept 2018 - Current</h3>
+									</div>
+								</div>		
+								<p>
+									<ul>	
+										<li>Chose cover of artwork, selected fonts and arranged designs to attract target readership. </li>
+										<li>Wrote and proofread in social media posts. </li>
+										<li>Maintained calligraphy design knowledge by attending various workshops.</li>
+										<li>Majored in kufi and thuluth calligraphy.</li>
+										<li><a href="index.html"><b>Click Here</b></a> to see my calligraphy artwork.</li>
+										
+									</ul>
+								</p>	
+									
+							</div>
+							
+							<div class="job">
+								<div class="job-title-container">
+									<div>
+										<div class="job-company"><h3>Computer Science Intern</h3></div>
+										<div class="job-title"><i style="font-family:15px;">IT Department, Kemaman Municipal Council (MPK), Kemaman, Terengganu</i></div>
+									</div>
+									<div style="padding-right:20px;">
+										<h3>Aug 2020 - Sep 2020</h3>
+									</div>
+								</div>		
+								<p>
+								<div class="center">
+									<video controls style="width:350px; height:240px;">
+										<source src="images/Intern.mp4" type="video/mp4"> Your Browser Does Not Support
+									</video><b>Internship Short Video</b>
+								</div>
+									<ul>	
+										<li>Designed, implemented and develop web-based system project which is File Management System.</li>
+										<li>Conducted testing, review of website design for responsiveness, clarity, plugins, functionality for continuous improvement and effectiveness. </li>	
+										<li>Wrote lines of code using HTML, CSS, JavaScript and jQuery languages.</li>
+										<li>Pulled from PHP, SQL, JavaScript and other backend library knowledge to bolster programming resources. </li>
+										<li>Designed, developed and implemented software applications for website based on analyzed requirements and understanding of industry technical standards.</li>
+										<li>Maintained excellent attendance record, consistently arriving to work on time. </li>
+											
+									</ul>
+								</p>	
+									
+							</div>
+						</div>
+						
+						<hr>
+						
+						<div class="edu" id="edu">
+							<h2 style="font-family:tahoma"><img src="images/mortarboard.png" style="padding-right:10px;"width="25px" height="25px">EDUCATION</h2>
+							<div class="edu-container" style="padding-left:40px;">
+								<h3>Diploma In Computer Science</h3>
+								<h4><i>Universiti Teknologi Mara (UiTM) - Kuala Terengganu</i></h4>
+								<p>
+									<ul>
+										<li>Dean's List Semester 3 & 4 (Year 2) </li>
+										<li>Current CGPA : 3.51 </li>
+										<li>Majored in Java, PHP, HTML, CSS </li>
+										<li>Elected to "Ketua Exco Integrasi Perpaduan Siswa/Siswi" for Club Minda Islam in 2019. </li>
+										<li>Pusat Kecemerlangan Akademik (PKA) Club - Appointed as a Program Secretary for Tutoring Programme.</li>
+										<li>Project Leader Programme - "Kursus Imam & Bilal 2019".</li>
+									</ul>	
+								</p>
+								
+								<h3>Sijil Pelajaran Malayisa (SPM)</h3>
+								<h4><i>SM Islam Al Amin - Kemaman </i></h4>
+								<p>
+									<ul>
+										<li>Science stream, majored in Additional Mathematics, Physics, Chemistry and Principle of Accounting.</li>
+										<li>The highest councilor of the school.</li>
+										<li>1st prize of choral speaking competition (School State).</li>
+									</ul>	
+								</p>
+							</div>
+						</div>
+						
+						<hr>
+							
+						<h2 style="font-family:tahoma"><img src="images/medal.png" style="padding-right:10px; "width="25px" height="25px">CERTIFICATE</h2>
+						<table class="certificate" width="700px" height="20px" align="center">
+							<tr>
+								<td>07-2020</td>
+								<td style="padding-left:50px">Certificate of Interpersonal and Human Relations - Openlearning.com </td>
+							</tr>
+							<tr>
+								<td>07-2020</td>
+								<td style="padding-left:50px">Certificate of Literacy Digital for Community - Openlearning.com </td>
+							</tr>
+							<tr>
+								<td>07-2020</td>
+								<td style="padding-left:50px">Certificate of Exploring Social Work & Human Services - Openlearning.com</td>
+							</tr>
+							<tr>
+								<td>08-2020</td>
+								<td style="padding-left:50px">Certificate of Social Media & Learning - Openlearning.com  </td>
+							</tr>
+							<tr>
+								<td>09-2020</td>
+								<td style="padding-left:50px">Certificate of Internship Completion - Kemaman Council Municipal (MPK) </td>
+							</tr>
+						</table>
+						<br>
+					</td>
+				</tr>
+			
+			
+			</table>
+		</div>
+		<br>
+		<footer>
+			<div class="footer"> &copy; Copyright 2020 - Developed by Syahmi Hafiz</div>
+		</footer>
+	
+	
+	</body>
+
+
+</html>

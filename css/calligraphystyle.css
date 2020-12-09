@@ -1,0 +1,97 @@
+/* CSS Document */
+
+
+body{
+	margin: 0;
+	font-family:'Happy Monkey', cursive;
+	text-align: center;
+}
+
+
+.banner-home{
+	background-image: url("../calligraphy images/bg.jpeg");
+	height: 300px;
+	background-size: cover;
+	background-position: top;
+	padding-top: 60px;
+	box-shadow: 5px 10px 18px #888888;
+}
+.banner-home h1{
+	font-family:'Happy Monkey', cursive;
+	text-align: center;
+	font-size: 2em;
+	margin-top: 0;
+	color: #2A2C38
+}
+
+
+.image-one{
+	text-align: center;
+	padding: 0 20px;	
+	
+}
+
+.art-one-home-img{
+	width: 100%;
+	height: 650px;
+	background-image: url("../calligraphy images/kufi.jpg");
+	background-size: cover;
+	background-position: center;
+	box-shadow: 5px 10px 18px #888888;
+	
+}
+.art-one-home{
+	background-color: antiquewhite;
+	padding: 0 20px 10px 20px;
+	margin-bottom: 20px;
+	box-shadow: 5px 10px 18px #888888;
+	
+}
+
+.footer-home{
+	padding: 20px;
+}
+
+
+@media screen and (min-width:500px){
+
+	.feature-images{
+		display: flex;
+	}
+	.image-one{
+		flex: 1;
+	}
+	.art-one-home{
+		display: flex;
+		padding: 0;
+	}
+	.art-one-home-img{
+		flex: 1;
+		height: 50vh;
+	}
+	.art-text{
+		flex: 1;
+	}
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
